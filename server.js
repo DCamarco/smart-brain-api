@@ -13,10 +13,10 @@ const image = require('./controllers/image');
 const db = knex({
         client: 'dpg-ceblh66n6mphc8o9nhq0-a',
         connection: {
-          host : 'postgres://face_detector_database_user:KeJjLU6YgpQ7AJ7HTvUiCjeRlEbQnFvT@dpg-ceblh66n6mphc8o9nhq0-a/face_detector_database', //localhost
-          user : 'face_detector_database_user', //add your user name for the database here
-          port: 5432, // add your port number here
-          password : 'KeJjLU6YgpQ7AJ7HTvUiCjeRlEbQnFvT', //add your correct password in here
+          host : 'postgresql://postgres:1Xvgs9bCn3UP5jRC1KXL@containers-us-west-110.railway.app:7766/railway', //localhost
+          user : 'postgres', //add your user name for the database here
+          port: 7766, // add your port number here
+          password : '1Xvgs9bCn3UP5jRC1KXL', //add your correct password in here
           database : 'face_detector_database' //add your database name you created here
         }
 });
