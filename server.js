@@ -11,7 +11,8 @@ const image = require('./controllers/image');
 
 
 const db = knex({
-        client: 'postgresql',
+        client: 'pg',
+        version: '15',
         connection: {
           host : 'postgresql://postgres:3agfE9u5ZfDSMCD4bli2@containers-us-west-107.railway.app:5724/railway', //localhost
           user : 'postgres', //add your user name for the database here
@@ -20,6 +21,13 @@ const db = knex({
           database : 'railway' //add your database name you created here
         }
 });
+
+// const pg = require('knex')({
+//   client: 'pg',
+//   connection: process.env.PG_CONNECTION_STRING,
+//   searchPath: ['knex', 'public'],
+// });
+
 
 
 const app = express();
