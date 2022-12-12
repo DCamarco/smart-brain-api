@@ -11,13 +11,13 @@ const image = require('./controllers/image');
 
 
 const db = knex({
-        client: 'pg',
+        client: 'dpg-ceblh66n6mphc8o9nhq0-a',
         connection: {
-          host : '127.0.0.1', //localhost
-          user : 'postgres', //add your user name for the database here
+          host : 'postgres://face_detector_database_user:KeJjLU6YgpQ7AJ7HTvUiCjeRlEbQnFvT@dpg-ceblh66n6mphc8o9nhq0-a/face_detector_database', //localhost
+          user : 'face_detector_database_user', //add your user name for the database here
           port: 5432, // add your port number here
-          password : 'test', //add your correct password in here
-          database : 'smart_brain' //add your database name you created here
+          password : 'KeJjLU6YgpQ7AJ7HTvUiCjeRlEbQnFvT', //add your correct password in here
+          database : 'face_detector_database' //add your database name you created here
         }
 });
 
