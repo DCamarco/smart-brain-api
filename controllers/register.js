@@ -1,3 +1,4 @@
+console.log('Entered Register Path')
 const handleRegister = (req, res, db, bcrypt) => {
     const { email, name, password } = req.body;
     if (!email || !name || !password) {
@@ -30,5 +31,5 @@ const handleRegister = (req, res, db, bcrypt) => {
 
 
 module.exports = {
-    handleRegister: handleRegister
+    handleRegister
 }
