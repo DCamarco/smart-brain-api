@@ -13,10 +13,10 @@ const image = require('./controllers/image');
 const db = knex({
         client: 'postgresql',
         connection: {
-          host : 'postgresql://postgres:1Xvgs9bCn3UP5jRC1KXL@containers-us-west-110.railway.app:7766/railway', //localhost
+          host : 'postgresql://postgres:3agfE9u5ZfDSMCD4bli2@containers-us-west-107.railway.app:5724/railway', //localhost
           user : 'postgres', //add your user name for the database here
-          port: 7766, // add your port number here
-          password : '1Xvgs9bCn3UP5jRC1KXL', //add your correct password in here
+          port: 5724, // add your port number here
+          password : '3agfE9u5ZfDSMCD4bli2', //add your correct password in here
           database : 'railway' //add your database name you created here
         }
 });
